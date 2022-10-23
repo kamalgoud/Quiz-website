@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <style>
+        .headImage{
+            float: left;
+            padding: 5px;
+            margin: auto;
+        }
+        .head{
+            background-color: rgb(255, 255, 255);
+            padding: 70px;
+            font-size: 80px;
+        }
+        .bodysuper{
+            background-color: rgb(255, 255, 255);
+            padding: 5%;
+            padding-top: 30px;
+            padding-bottom: 5px;
+            margin: 30px;
+            display: flex;
+            justify-items: auto;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .htmlQuiz{
+            border-radius: 1rem;
+            margin: 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 7px 7px 3px rgba(0, 0, 0, 0.2);
+        }
+        .htmlQuiz :hover{
+            cursor: pointer;
+            box-shadow: 3px 10px 10px 3px rgba(0, 0, 0, 0.5);
+        }
+        .bar {
+            background-color: rgb(168, 77, 253);
+        }
+        .bar ul li{
+            display: inline-block;
+            padding: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border: 0px solid rgb(255, 255, 255);
+            margin: 10px;
+            background-color: white ;
+        }
+        .bar ul li a{
+            text-decoration: none;
+            padding: 30px;
+        }
+        #instructions{
+            padding: 30px;
+            margin: 30px;
+            margin-left: 50px;
+            border: 1px solid black;
+        }
+        #instructions ol li{
+            padding: 10px;
+        }
+        #contact{
+            padding: 30px;
+            margin: 30px;
+            margin-left: 50px;
+            border: 1px solid black;
+        }
+        #contact table tr td{
+            padding: 10px;
+        }
+        #feedback{
+            padding: 30px;
+            margin: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img class="headImage" src="quiz1.jpg" alt="Quiz" height="250px" width="250px">
+    <center><h1 class="head">Quiz competetion</h1></center>
+    <div class="bar">
+        <ul>
+            <li>
+                <a href="#explore">Explore</a>
+            </li>
+            <li>
+                <a href="#instructions">Instructions</a>
+            </li>
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+            <li>
+                <a href="#feedback">Feedback</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="super">
+        <p id="explore" style="padding-left: 30px;">Note*: Select one quiz to compete</p>
+        <div class="bodysuper" >
+            <div class="htmlQuiz">
+                <a href="index.html"><img src="quiz2.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+            <div class="htmlQuiz">
+                <a href="css.html "><img src="cssquiz.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+            <div class="htmlQuiz">
+                <a href="c.html"><img src="cquiz.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+    
+        </div>
+        <div class="bodysuper">
+            <div class="htmlQuiz">
+                <a href="java.html"><img src="javaquiz.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+            <div class="htmlQuiz">
+                <a href="cpp.html"><img src="cppquiz.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+            <div class="htmlQuiz">
+                <a href="javascript.html"><img src="jsquiz.jpg"  alt="" height="200px" width="200px"></a>
+            </div>
+    
+        </div>
+<br>
+        <div id="instructions">
+            <h1 style="background-color: rgb(168, 77, 253);color: white;padding-left: 10px;">Instructions</h1>
+            <ol>
+                <li>
+                    Select one Quiz to attempt.
+                </li>
+                <li>
+                    You will have to answer all questions.
+                </li>
+                <li>
+                    No negative marking.
+                </li>
+                <li>
+                    You will get marks at the end of the Test.
+                </li>
+                <li>
+                    Press Home button at the end to get to the Home page.
+                </li>
+            </ol>
+        </div>
+<br>
+        <div id="contact">
+            <h1 style="background-color: rgb(168, 77, 253);color: white;padding-left: 10px;">Contact form</h1>
+            <form action="">
+                <table>
+                    <tr><td>Name</td><td><input type="text" name="" id="" placeholder="Name"></td></tr>
+                    <tr><td>E-mail</td><td><input type="email" name="" id="" placeholder="Email"></td></tr>
+                    <tr><td>Phone number</td><td><input type="tel" name="" id="" placeholder="Phone number"></td></tr>
+                    <tr><td>Address</td><td><textarea name="" id="" cols="30" rows="10" placeholder="Addresss"></textarea></td></tr>
+                </table>
+                
+            </form>
+            <button type="submit" onclick="submit()">submit</button>
+        </div>
+<br><br>
+        <div id="feedback">
+            <h1 style="background-color: rgb(168, 77, 253);color: white;padding-left: 10px;">Feedback</h1>
+            <textarea name="" id="" cols="100" rows="15" placeholder="Feedback"></textarea> <br>
+            <button type="submit" onclick="feed()">submit</button>
+        </div>
+        
+    </div>
+    
+    <script>
+        function submit(){
+            alert("Successfully Submitted")
+        }
+        function feed(){
+            alert("Feedback submitted successfully")
+        }
+    </script>
+    
+</body>
+</html>
